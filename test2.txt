@@ -1,0 +1,110 @@
+1.explain the concept of method overloding in Java.Provide example using static method.
+  method overloding is a same method but different parameter is called method overloding
+  
+  class Animal{
+   Static void main(String name){
+}
+static void lion(String name,int age)
+}
+}
+
+
+2.What are the different kinds of variables defined in java programming language?with example
+  Static-static variable is used to outside main
+  Local-local variable is used to inside the method 
+  Instance-instance is create a class of the object
+class cake{
+string type;/instance
+void disply(){
+float price;/local
+ststic int number;/static 
+}
+
+4.
+class Carrom{
+double cost;
+String color;
+int pan;
+	
+Carrom(){
+System.out.println("Invoking no-org of carrom");	
+}
+Carrom(double cost){
+System.out.println("Invoking string,float constructor of carrom");
+System.out.println("Cost:"+cost);
+this.cost=cost;
+}
+Carrom(double cost, String color){
+System.out.println("Invoking string,float constructor of carrom");
+System.out.println("Cost:"+cost);
+System.out.println("Color:"+color);
+this.cost=cost;
+this.color=color;
+}
+Carrom(double cost, String color,int pan){
+System.out.println("Invoking string,float constructor of carrom");
+System.out.println("Cost:"+cost);
+System.out.println("Color:"+color);
+System.out.println("Pan:"+pan);
+this.cost=cost;
+this.color=color;
+this.pan=pan;
+}
+}
+ 
+class CarromMain{
+public static void main(String[] args)
+{
+System.out.println("Invoking main on carrom");
+Carrom carrom1=new Carrom();
+System.out.println(carrom1.cost);
+System.out.println(carrom1.color);
+System.out.println(carrom1.pan);
+System.out.println("--------------------------");
+Carrom carrom2=new Carrom(1000);
+System.out.println(carrom2.cost);
+System.out.println("--------------------------");
+Carrom carrom3=new Carrom(1000,"Block");
+System.out.println(carrom3.cost);
+System.out.println(carrom3.color);
+System.out.println("--------------------------");
+Carrom carrom4=new Carrom(1000,"Black",11);
+System.out.println(carrom4.cost);
+System.out.println(carrom4.color);
+System.out.println(carrom4.pan);
+}
+	
+}
+6.
+
+7.
+class Brick{
+static String use;
+static String state;
+double price;
+String material;
+	
+Brick(String material,double price)
+{
+System.out.println("Invoking String,double constructor of Brick");
+this.material=material;
+this.price=price;
+}
+	
+static{
+use="Construction";
+state="Solid";
+}
+	
+tatic void printStatic()
+{
+System.out.println("Invoking printstatic in Brick");
+System.out.println("Brick use :"+use);
+System.out.println("Brick state :"+state);
+}	
+void printInstance(){
+System.out.println("Invoking printInstance in Brick");
+System.out.println("Brick material :"+material);
+System.out.println("Brick price :"+price);
+}
+}
